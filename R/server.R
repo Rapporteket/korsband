@@ -1,4 +1,4 @@
-#' Server logic for the rapRegTemplate app
+#' Server logic for the korsband app
 #'
 #' @param input shiny input object
 #' @param output shiny output object
@@ -28,7 +28,7 @@ app_server <- function(input, output, session) {
 
   rapbase::autoReportServer(
     id = "subscription",
-    registryName = "rapRegTemplate",
+    registryName = "korsband",
     type = "subscription",
     paramNames = subParamNames,
     paramValues = subParamValues,
